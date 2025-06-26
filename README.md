@@ -1,50 +1,164 @@
-# Welcome to your Expo app 👋
+# Mood Snacks App 🍫 😊
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native application that helps users track their moods and suggests appropriate snacks based on their emotional state. This innovative app combines mood tracking with personalized snack recommendations to help users make mindful eating choices that complement their emotional well-being.
 
-## Get started
+## Introduction
 
-1. Install dependencies
+Mood Snacks is a mobile application built with React Native and Expo that helps users:
+- Track their daily moods and emotional states
+- Record the intensity of their emotions
+- Get personalized snack recommendations based on their current mood
+- Manage a customizable list of mood-appropriate snacks
+- View their mood history and patterns
+
+## Features
+
+### 1. Mood Tracking
+- Record daily moods with emoji representations
+- Add notes to mood entries
+- Set mood intensity levels
+- Track mood patterns over time
+
+### 2. Smart Snack Recommendations
+- Get personalized snack suggestions based on current mood
+- View detailed snack descriptions
+- Customize snack-mood associations
+
+### 3. User Interface
+- Dark/Light mode support
+- Intuitive and responsive design
+- Haptic feedback for enhanced user experience
+- Smooth animations and transitions
+
+### 4. Data Management
+- Local storage for mood and snack data
+- Persistent user preferences
+- Secure data handling
+
+## Technical Stack
+
+- **Framework**: React Native with Expo
+- **State Management**: React Context API
+- **Storage**: AsyncStorage
+- **UI Components**: Custom components with native elements
+- **Styling**: React Native StyleSheet
+- **Navigation**: Expo Router
+
+## Prerequisites
+
+Before running the app, ensure you have the following installed:
+- Node.js (LTS version 18.x or 20.x)
+- npm or yarn
+- Expo CLI
+- iOS Simulator (for Mac users) or Android Studio (for Android development)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/lakssy/mood-snacks-app.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd mood-snacks-app
+   ```
+
+3. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+4. Start the development server:
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Project Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+my-app/
+├── app/                 # Main application screens
+├── components/         # Reusable UI components
+├── constants/         # App-wide constants
+├── context/          # React Context providers
+├── hooks/            # Custom React hooks
+├── types/            # TypeScript type definitions
+└── assets/           # Images, fonts, and other static files
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Key Components
 
-## Learn more
+### 1. Mood Management
+- `MoodTracker`: Core component for recording moods
+- `MoodHistory`: Displays historical mood data
+- `MoodIntensity`: Allows users to set mood intensity levels
 
-To learn more about developing your project with Expo, look at the following resources:
+### 2. Snack Features
+- `SnackRecommendation`: Suggests snacks based on mood
+- `SnackManager`: Interface for managing snack entries
+- `SnackList`: Displays available snacks
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 3. UI Components
+- `ThemedView`: Context-aware themed container
+- `ThemedText`: Context-aware themed text
+- `HapticTab`: Touch-responsive tab with haptic feedback
 
-## Join the community
+## Configuration
 
-Join our community of developers creating universal apps.
+The app can be configured through various environment variables and settings:
+- Dark/Light mode preferences
+- Default snack recommendations
+- Mood tracking intervals
+- Data persistence options
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Contributing
+
+We welcome contributions to the Mood Snacks app! Please follow these steps:
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For support, please:
+- Open an issue in the GitHub repository
+- Contact the development team
+- Check the documentation
+
+## Future Enhancements
+
+1. **Analytics Dashboard**
+   - Detailed mood tracking analytics
+   - Snack consumption patterns
+   - Correlation analysis
+
+2. **Social Features**
+   - Share mood journals
+   - Community snack recommendations
+   - Friend system
+
+3. **Advanced Personalization**
+   - Machine learning-based recommendations
+   - Custom mood categories
+   - Dietary preference integration
+
+## Acknowledgments
+
+- React Native community
+- Expo team
+- All contributors and testers
+
+---
+
+Built with ❤️ by [lakssy](https://github.com/lakssy)
